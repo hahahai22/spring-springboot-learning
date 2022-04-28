@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- stu对象的创建和依赖的注入（property标签的属性赋值）
+    启动容器的同时stu对象被创建
+    等同于：Studnent stu = new Student();
+    class是创建对象的类型，底层通过反射构建对象。
+    -->
+    <bean id="stu" class="com.bjpowernode.vo1.Student">
+        <property name="name" value="张三"/>
+        <property name="age" value="22"/>
+    </bean>
+</beans>

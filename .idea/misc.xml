@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/001-springboot-pre/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-first/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-seconde/pom.xml" />
+        <option value="$PROJECT_DIR$/003-springboot-three/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-second/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-three/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-001-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-002-sanceng/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-003-sancengxml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-004-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-005-sanceng-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-006-sancengxml-chaifen/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-007-sanceng-annotation-chaifen/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-008-aop/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

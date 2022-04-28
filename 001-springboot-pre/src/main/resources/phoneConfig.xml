@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 使用bean定义一个实例对象
+        一个实例对应一个bean标签，
+        程序通过id属性访问实例，bean与bean之间的依赖关系通过id属性建立。
+        class属性，指定该bean所属于的类，只能是类不能是接口。
+    -->
+    <bean id="myPhone" class="com.bjpowernode.vo.Phone">
+        <property name="name" value="HUAWEI"/>
+        <property name="color" value="red"/>
+        <property name="num" value="1317292"/>
+    </bean>
+</beans>

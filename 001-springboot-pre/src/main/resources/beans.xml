@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 声明Cat对象 -->
+    <bean id="myCat" class="com.bjpowernode.vo.Cat">
+        <!-- 给属性赋值 -->
+        <property name="cardId" value="uw31515522"/>
+        <property name="name" value="tom猫"/>
+        <property name="age" value="2"/>
+    </bean>
+
+    <!--
+    这三个标签相当于SpringConfig.java中的
+    @Configuration 说明当作配置文件使用
+    @ImportResource(value = {"classpath:beans.xml", "classpath:applicationContext.xml"})
+    @PropertySource(value = "classpath:config.properties")
+    @ComponentScan(basePackages = "com.bjpowernode.vo")
+
+    <context:property-placeholder location="config.properties"/>  读属性配置文件
+    <context:component-scan base-package="com.bjpowernode.vo"/>  组件扫描器
+    <import resource="applicationContext.xml"/> 导入配置文件
+    -->
+</beans>

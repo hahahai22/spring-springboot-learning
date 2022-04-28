@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    创建对象
+这里Spring接管了三层架构的对象的创建 -->
+<!--    1、创建数据访问层的对象（由Spring去接管）-->
+<!--    每次对象创建完成以后，查看是否🈶需要注入的成员变量（属性）-->
+    <bean id="uMapper" class="com.bjpowernode.dao.UsersMpperImp"> </bean>
+
+<!--    2、创建业务逻辑层的对象-->
+    <bean id="uService" class="com.bjpowernode.service.imp.UsersServiceImp">
+        <property name="usersMapper" ref="uMapper"/>
+    </bean>
+
+<!--    3、创建界面层的对象-->
+    <bean id="uController" class="com.bjpowernode.controller.UsersController">
+        <property name="usersService" ref="uService"/>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    a.创建School对象，并为创建好的成员变量 使用构造方法的参数名称 注入值-->
+<!--    <bean id="school" class="com.bjpowernode.vo3.School"></bean> 这里会报错，原因是没有匹配的构造方法去注入值
+（即没有无参构造方法）我们可以直接调用构造方法注入值 -->
+    <bean id="school" class="com.bjpowernode.vo3.School">
+<!--        直接调用构造方法，注入值。创建对象的同时，构造方法注入值
+            使用name属性，则表示使用构造方法的参数名称注入值
+-->
+        <constructor-arg name="name1" value="清华大学"/>
+        <constructor-arg name="address1" value="海淀区"/>
+    </bean>
+
+<!--    b.创建Student对象，并为创建好的成员变量 使用构造方法的下标 注入值-->
+    <bean id="stu" class="com.bjpowernode.vo3.Student">
+        <constructor-arg index="0" value="张三"/>
+        <constructor-arg index="1" value="27"/>
+        <constructor-arg index="2" ref="school"/>
+    </bean>
+
+<!--    c.创建Student对象，并为创建好的成员变量 使用构造方法的默认顺序 注入值-->
+    <bean id="stu1" class="com.bjpowernode.vo3.Student">
+        <constructor-arg value="张三"/>
+        <constructor-arg value="27"/>
+        <constructor-arg ref="school"/>
+    </bean>
+
+</beans>

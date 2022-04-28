@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-005-sanceng-annotation" />
+        <module name="spring-008-aop" />
+        <module name="springboot-three" />
+        <module name="spring-001-demo" />
+        <module name="springbootmvc" />
+        <module name="spring-004-annotation" />
+        <module name="spring-003-sancengxml (1)" />
+        <module name="spring-003-sancengxml" />
+        <module name="spring-002-sanceng" />
+        <module name="springboot-first" />
+        <module name="spring-007-sanceng-annotation-chaifen" />
+        <module name="springboot-second" />
+        <module name="001-springboot-pre" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="001-springboot-pre" target="1.8" />
+      <module name="002-springboot-first" target="1.8" />
+      <module name="003-springboot-second" target="1.8" />
+      <module name="004-springboot-three" target="1.5" />
+      <module name="spring-001-demo" target="1.7" />
+      <module name="spring-002-sanceng" target="1.7" />
+      <module name="spring-003-sancengxml" target="1.7" />
+      <module name="spring-003-sancengxml (1)" target="1.7" />
+      <module name="spring-004-annotation" target="1.7" />
+      <module name="spring-005-sanceng-annotation" target="1.7" />
+      <module name="spring-005-sanceng-annotation (1)" target="1.7" />
+      <module name="spring-007-sanceng-annotation-chaifen" target="1.7" />
+      <module name="spring-008-aop" target="8" />
+      <module name="springboot-first" target="1.8" />
+      <module name="springboot-mvc" target="1.8" />
+      <module name="springboot-second" target="1.8" />
+      <module name="springboot-three" target="1.8" />
+      <module name="springbootmvc" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="002-springboot-first" options="-parameters" />
+      <module name="003-springboot-second" options="-parameters" />
+      <module name="springboot-first" options="-parameters" />
+      <module name="springboot-mvc" options="-parameters" />
+      <module name="springboot-second" options="-parameters" />
+      <module name="springboot-three" options="-parameters" />
+      <module name="springbootmvc" options="-parameters" />
+    </option>
+  </component>
+</project>

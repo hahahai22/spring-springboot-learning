@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    创建学校对象-->
+    <bean id="school" class="com.bjpowernode.vo2.School">
+        <property name="name" value="北京大学"/>
+        <property name="address" value="海淀区"/>
+    </bean>
+
+<!--    创建学生对象-->
+    <bean id="stu" class="com.bjpowernode.vo2.Student" autowire="byType">
+        <property name="name" value="李斯"/>
+        <property name="age" value="22"/>
+<!--        <property name="school" ref="school"/>-->
+        <!--ref这种注入才可以称为依赖注入，上面的算是赋值，将stu对象的依赖school对象注入（依赖注入）
+            这里的school是上面的id="school"中的school
+            引用类型的注入容器使用ref属性,普通类型的注入使用value属性
+            ref可以被替代，使用autowired(可以是按类型注入，也可以是按名称注入)
+        -->
+    </bean>
+</beans>
