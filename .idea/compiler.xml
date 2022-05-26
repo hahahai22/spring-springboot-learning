@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-005-sanceng-annotation" />
         <module name="spring-008-aop" />
+        <module name="spring-009-aspectj" />
         <module name="springboot-three" />
         <module name="spring-001-demo" />
         <module name="springbootmvc" />
@@ -35,6 +36,7 @@
       <module name="spring-005-sanceng-annotation (1)" target="1.7" />
       <module name="spring-007-sanceng-annotation-chaifen" target="1.7" />
       <module name="spring-008-aop" target="8" />
+      <module name="spring-009-aspectj" target="1.8" />
       <module name="springboot-first" target="1.8" />
       <module name="springboot-mvc" target="1.8" />
       <module name="springboot-second" target="1.8" />

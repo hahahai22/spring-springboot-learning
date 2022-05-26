@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-009-aspectj:war">
+    <output-path>$PROJECT_DIR$/spring-009-aspectj/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>spring-009-aspectj</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="spring-009-aspectj-1.0.war">
+      <element id="artifact" artifact-name="spring-009-aspectj:war exploded" />
+    </root>
+  </artifact>
+</component>

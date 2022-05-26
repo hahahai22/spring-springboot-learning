@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-005-sanceng-annotation/spring-005-sanceng-annotation.iml" filepath="$PROJECT_DIR$/spring-005-sanceng-annotation/spring-005-sanceng-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-007-sanceng-annotation-chaifen/spring-007-sanceng-annotation-chaifen.iml" filepath="$PROJECT_DIR$/spring-007-sanceng-annotation-chaifen/spring-007-sanceng-annotation-chaifen.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-008-aop/spring-008-aop.iml" filepath="$PROJECT_DIR$/spring-008-aop/spring-008-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-009-aspectj/spring-009-aspectj/spring-009-aspectj.iml" filepath="$PROJECT_DIR$/spring-009-aspectj/spring-009-aspectj/spring-009-aspectj.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-first/springboot-first.iml" filepath="$PROJECT_DIR$/springboot-first/springboot-first.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-second/springboot-second.iml" filepath="$PROJECT_DIR$/springboot-second/springboot-second.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-three/springboot-three.iml" filepath="$PROJECT_DIR$/springboot-three/springboot-three.iml" />
