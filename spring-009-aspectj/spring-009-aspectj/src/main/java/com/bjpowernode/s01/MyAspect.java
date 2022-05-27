@@ -13,9 +13,10 @@ import java.util.Arrays;
  * @version 2021.2
  * @date 2022/5/25 15:44
  * 切面类，包含各种切面方法
+ * 前置通知
  */
 @Aspect // 这个注解的意思是，交给Aspectj框架去识别切面类
-@Component
+@Component // 交给Spring容器去处理，使被扫描到，创建对象。
 public class MyAspect {
     /**
      * 所有切面的功能都是由切面方法来实现的
