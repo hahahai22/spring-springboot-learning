@@ -16,8 +16,9 @@ public class SomeServiceImpl implements SomeService{
     }
 
     @Override
-    public Student chang() {
-        System.out.println("chang方法被执行。。。。。");
+    public Student change() {
+        System.out.println("change方法被执行。。。。。");
+        // System.out.println(1/0);  测试后置通知是否可以始终被执行（目标方法被执行，后置方法被炸掉）
         return new Student("李四");
     }
 }

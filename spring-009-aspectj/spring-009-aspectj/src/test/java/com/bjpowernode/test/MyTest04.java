@@ -23,6 +23,15 @@ public class MyTest04 {
         String s = someService.doSome("zhangsan", 22);
         System.out.println("在测试方法中，目标方法的返回值" + s);
 
+        /**运行结果
+         * 环绕通知中的前置通知功能执行。。。。。
+         * 前置通知方法执行。。。。。
+         * doSome业务方法被执行。。。。。zhangsan
+         * 环绕通知中的后置功能被实现。。。。。
+         * 最终通知方法执行。。。。。
+         * 后置通知方法执行。。。。。
+         * 在测试方法中，目标方法的返回值abcd
+         */
     }
 
 }

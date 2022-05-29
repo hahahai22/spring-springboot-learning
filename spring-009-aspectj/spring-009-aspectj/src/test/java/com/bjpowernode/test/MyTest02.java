@@ -41,13 +41,13 @@ public class MyTest02 {
          * 下面这个对象someService已经不是原始的一个业务实现的功能，而是加入切面功能的对象
          */
         SomeService someService = (SomeService) ac.getBean("someServiceImpl");
-        Student student = someService.chang();
+        Student student = someService.change();
         System.out.println("在测试方法中，目标方法的返回值" + student);
 
 
         /**输出结果，表明在切面方法中对目标方法的返回值修改成功
          *
-         * chang方法被执行。。。。。
+         * change方法被执行。。。。。
          * 后置通知方法的实现。。。。。
          * 在切面方法中，修改目标方法的引用类型的返回值：Student{name='王五'}
          * 在测试方法中，目标方法的返回值Student{name='王五'}

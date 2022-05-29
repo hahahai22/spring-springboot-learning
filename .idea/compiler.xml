@@ -11,6 +11,7 @@
         <module name="spring-009-aspectj" />
         <module name="springboot-three" />
         <module name="spring-001-demo" />
+        <module name="spring-010-sm" />
         <module name="springbootmvc" />
         <module name="spring-004-annotation" />
         <module name="spring-003-sancengxml (1)" />
@@ -37,6 +38,7 @@
       <module name="spring-007-sanceng-annotation-chaifen" target="1.7" />
       <module name="spring-008-aop" target="8" />
       <module name="spring-009-aspectj" target="1.8" />
+      <module name="spring-010-sm" target="1.8" />
       <module name="springboot-first" target="1.8" />
       <module name="springboot-mvc" target="1.8" />
       <module name="springboot-second" target="1.8" />

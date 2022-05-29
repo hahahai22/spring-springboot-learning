@@ -13,7 +13,7 @@ public class SomeServiceImpl implements SomeService {
     @Override
     public String doSome(String name, int age) {
         System.out.println("doSome业务方法被执行。。。。。" + name);
-        System.out.println(1/0);    // 试一下这个，看最终通知是否执行。
+        // System.out.println(1/0);    // 试一下这个，看最终通知是否执行。
         return "abcd";
     }
 }

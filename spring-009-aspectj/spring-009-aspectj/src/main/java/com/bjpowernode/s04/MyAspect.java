@@ -1,7 +1,7 @@
 package com.bjpowernode.s04;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 /**
@@ -23,8 +23,30 @@ public class MyAspect {
      *  参数：
      *  value 指定切入点表达式
      */
-    @After(value = "execution(* com.bjpowernode.s04.*.*(..))")
+    @After(value = "myCut()")
     public void MyAfter() {
         System.out.println("最终通知方法执行。。。。。");
     }
+
+    @Before(value = "myCut()")
+    public void MyBefore() {
+        System.out.println("前置通知方法执行。。。。。");
+    }
+
+    @AfterReturning(value = "myCut()", returning = "obj")
+    public void MyAfter(Object obj) {
+        System.out.println("后置通知方法执行。。。。。");
+    }
+
+    @Around(value = "myCut()")
+    public Object myAround(ProceedingJoinPoint pjp) throws Throwable {
+        System.out.println("环绕通知中的前置通知功能执行。。。。。");
+        Object obj = pjp.proceed(pjp.getArgs());
+        System.out.println("环绕通知中的后置功能被实现。。。。。");
+        return obj;
+    }
+
+    @Pointcut(value = "execution(* com.bjpowernode.s04.*.*(..))")
+    public void myCut(){}
+
 }
