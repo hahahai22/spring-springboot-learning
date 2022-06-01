@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 <!--    导入ApplicationContext_mapper.xml文件
 创建容器并启动的时候只需要书写一个文件名即可-->
     <import resource="applicationContext_mapper.xml"></import>
 <!--SM是基于注解的开发，所以添加包扫描-->
     <context:component-scan base-package="com.bjpowernode.service"></context:component-scan>
+
 <!--    事务处理-->
+<!--    1、添加事务管理器
+DataSourceTransactionManager这个类用于事务管理
+-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<!--        因为事务必须关联数据库处理，所以需要配置数据源
+这里的ref="dataSource"是引用applicationContext_mapper.xml中创建的数据源dataSource-->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+<!--    2、添加事务的注解驱动
+transaction-manager="transactionManager"这里是指定为 上面的事务管理器-->
+    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
 
 </beans>
