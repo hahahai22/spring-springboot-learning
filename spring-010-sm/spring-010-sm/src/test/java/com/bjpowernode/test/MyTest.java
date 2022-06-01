@@ -33,7 +33,15 @@ public class MyTest {
         System.out.println(accountsService.getClass());
         // 传入实体类对象
         accountsService.save(new Accounts(204, "李六2", "账户安全04"));
+    }
 
-
+    @Test
+    public void TestTrans() {
+        // 创建容器对象并启动
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext_trans.xml");
+        // 取出UserServiceImpl对象
+        UsersService uservice = (UsersService) ac.getBean("userServiceImpl");
+        int num = uservice.insert(new Users(100, "zhangsan", "123"));
+        System.out.println(num);
     }
 }

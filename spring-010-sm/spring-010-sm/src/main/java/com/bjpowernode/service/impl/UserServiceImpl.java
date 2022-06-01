@@ -1,10 +1,14 @@
 package com.bjpowernode.service.impl;
 
 import com.bjpowernode.mapper.UsersMapper;
+import com.bjpowernode.pojo.Accounts;
 import com.bjpowernode.pojo.Users;
+import com.bjpowernode.service.AccountsService;
 import com.bjpowernode.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -28,12 +32,21 @@ public class UserServiceImpl implements UsersService {
      * uMapper = sqlSession.getMapper(UserMapper.class);
      */
     // 从业务逻辑层拿到数据访问层的对象，出现上面的不合适。使用下面的
-    @Autowired // 交给Spring容器依赖注入
-    UsersMapper usersMapper;
+    @Autowired // 交给Spring容器创建对象和依赖注入（赋值）
+    UsersMapper usersMapper; // 这个对象Spring容器已经创建成功，这里拿来用。
+
+    @Autowired
+    AccountsService accountsService; // 这里的accountsService对象在AccountsServiceImpl.java文件中添加了注解@Service，
+    // 已经由Spring容器创建成功，这里拿来用
 
 
     @Override
     public int insert(Users users) {
-        return usersMapper.insert(users);
+
+        int num = usersMapper.insert(users);
+        System.out.println("用户增加成功！" + num);
+        // 调用账户的增加操作，调用账户的业务逻辑层的功能。
+        num = accountsService.save(new Accounts(400, "张三", "账户增加成功"));
+        return num;
     }
 }
