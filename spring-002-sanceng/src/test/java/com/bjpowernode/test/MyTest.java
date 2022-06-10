@@ -13,7 +13,7 @@ public class MyTest {
 
     @Test
     public void test() {
-        // 创建谁的对象？创建UsersControll对象
+        // 创建谁的对象？创建UsersController对象
         UsersController usersController = new UsersController();
         int num = usersController.insert(new Users(31341, "张三",27));
         System.out.println(num);

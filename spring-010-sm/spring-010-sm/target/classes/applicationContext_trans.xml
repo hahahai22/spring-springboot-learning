@@ -22,9 +22,11 @@
             <tx:method name="*find*" read-only="true"/>
             <tx:method name="*search*" read-only="true"/>
             <tx:method name="*get*" read-only="true"/>
-            <tx:method name="*insert*" propagation="REQUIRED"/>
+            <!--            这里设置算数异常不回滚-->
+            <tx:method name="*insert*" propagation="REQUIRED" no-rollback-for="ArithmeticException"/>
             <tx:method name="*add*" propagation="REQUIRED"/>
-            <tx:method name="*save*" propagation="REQUIRED"/>
+            <!--            这里设置算数异常不回滚-->
+            <tx:method name="*save*" propagation="REQUIRED" no-rollback-for="ArithmeticException"/>
             <tx:method name="*set*" propagation="REQUIRED"/>
             <tx:method name="*update*" propagation="REQUIRED"/>
             <tx:method name="*change*" propagation="REQUIRED"/>

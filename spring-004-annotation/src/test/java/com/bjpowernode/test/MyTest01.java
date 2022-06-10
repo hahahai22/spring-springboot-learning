@@ -13,7 +13,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MyTest01 {
     @Test
     public void testStudent() {
+        // 创建Spring容器并启动
         ApplicationContext ctx = new ClassPathXmlApplicationContext("vo1/applicationConfig.xml");
+        // 获取对象
         Student stu = (Student) ctx.getBean("stu");
         System.out.println(stu);
     }

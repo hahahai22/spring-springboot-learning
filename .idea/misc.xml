@@ -24,6 +24,9 @@
         <option value="$PROJECT_DIR$/spring-008-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-009-aspectj/spring-009-aspectj/pom.xml" />
         <option value="$PROJECT_DIR$/spring-010-sm/spring-010-sm/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-006-environment/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-007-multi-environment/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-008-custom-yml/pom.xml" />
       </list>
     </option>
   </component>

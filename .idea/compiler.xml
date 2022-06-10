@@ -12,6 +12,8 @@
         <module name="springboot-three" />
         <module name="spring-001-demo" />
         <module name="spring-010-sm" />
+        <module name="springboot-008-custom-yml" />
+        <module name="springboot-007-multi-environment" />
         <module name="springbootmvc" />
         <module name="spring-004-annotation" />
         <module name="spring-003-sancengxml (1)" />
@@ -19,6 +21,7 @@
         <module name="spring-002-sanceng" />
         <module name="springboot-first" />
         <module name="spring-007-sanceng-annotation-chaifen" />
+        <module name="springboot-006-environment" />
         <module name="springboot-second" />
         <module name="001-springboot-pre" />
       </profile>
@@ -39,6 +42,9 @@
       <module name="spring-008-aop" target="8" />
       <module name="spring-009-aspectj" target="1.8" />
       <module name="spring-010-sm" target="1.8" />
+      <module name="springboot-006-environment" target="1.8" />
+      <module name="springboot-007-multi-environment" target="1.8" />
+      <module name="springboot-008-custom-yml" target="1.8" />
       <module name="springboot-first" target="1.8" />
       <module name="springboot-mvc" target="1.8" />
       <module name="springboot-second" target="1.8" />
@@ -50,6 +56,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="002-springboot-first" options="-parameters" />
       <module name="003-springboot-second" options="-parameters" />
+      <module name="springboot-006-environment" options="-parameters" />
+      <module name="springboot-007-multi-environment" options="-parameters" />
+      <module name="springboot-008-custom-yml" options="-parameters" />
       <module name="springboot-first" options="-parameters" />
       <module name="springboot-mvc" options="-parameters" />
       <module name="springboot-second" options="-parameters" />
